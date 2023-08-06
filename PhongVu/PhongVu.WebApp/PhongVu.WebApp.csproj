@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Auth\Change.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PhongVu.Application\PhongVu.Application.csproj" />
+    <ProjectReference Include="..\PhongVu.Domain\PhongVu.Domain.csproj" />
+    <ProjectReference Include="..\PhongVu.Infrastructure\PhongVu.Infrastructure.csproj" />
+    <ProjectReference Include="..\PhongVu.Persistence\PhongVu.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Auth\Change.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Auth\Change.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Auth\Change.cshtml" />
+  </ItemGroup>
+
+</Project>

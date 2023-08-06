@@ -1,0 +1,12 @@
+C:\Users\Admin\Documents\Dev\_PROJECT\PhongVu\PhongVu\PhongVu.Domain\bin\Debug\net7.0\PhongVu.Domain.deps.json
+C:\Users\Admin\Documents\Dev\_PROJECT\PhongVu\PhongVu\PhongVu.Domain\bin\Debug\net7.0\PhongVu.Domain.dll
+C:\Users\Admin\Documents\Dev\_PROJECT\PhongVu\PhongVu\PhongVu.Domain\bin\Debug\net7.0\PhongVu.Domain.pdb
+C:\Users\Admin\Documents\Dev\_PROJECT\PhongVu\PhongVu\PhongVu.Domain\obj\Debug\net7.0\PhongVu.Domain.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\Dev\_PROJECT\PhongVu\PhongVu\PhongVu.Domain\obj\Debug\net7.0\PhongVu.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\Dev\_PROJECT\PhongVu\PhongVu\PhongVu.Domain\obj\Debug\net7.0\PhongVu.Domain.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Dev\_PROJECT\PhongVu\PhongVu\PhongVu.Domain\obj\Debug\net7.0\PhongVu.Domain.AssemblyInfo.cs
+C:\Users\Admin\Documents\Dev\_PROJECT\PhongVu\PhongVu\PhongVu.Domain\obj\Debug\net7.0\PhongVu.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Dev\_PROJECT\PhongVu\PhongVu\PhongVu.Domain\obj\Debug\net7.0\PhongVu.Domain.dll
+C:\Users\Admin\Documents\Dev\_PROJECT\PhongVu\PhongVu\PhongVu.Domain\obj\Debug\net7.0\refint\PhongVu.Domain.dll
+C:\Users\Admin\Documents\Dev\_PROJECT\PhongVu\PhongVu\PhongVu.Domain\obj\Debug\net7.0\PhongVu.Domain.pdb
+C:\Users\Admin\Documents\Dev\_PROJECT\PhongVu\PhongVu\PhongVu.Domain\obj\Debug\net7.0\ref\PhongVu.Domain.dll

@@ -1,0 +1,43 @@
+﻿@model List<BannerType>
+
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Banner Type List</h4>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered verticle-middle table-responsive-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">BannerType Id</th>
+                            <th scope="col">BannerType Name</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.TypeId</td>
+                                <td>@item.TypeName</td>
+                                <td>
+                                    <span>
+                                        <a href="/dashboard/bannertype/edit/@item.TypeId" class="mr-4" data-toggle="tooltip"
+                                       data-placement="top" title="Edit">
+                                            <i class="fa fa-pencil color-muted"></i>
+                                        </a>
+                                        <a href="/dashboard/bannertype/delete/@item.TypeId" data-toggle="tooltip"
+                                       data-placement="top" title="Close">
+                                            <i class="fa fa-close color-danger"></i>
+                                        </a>
+                                    </span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

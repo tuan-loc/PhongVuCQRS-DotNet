@@ -1,0 +1,73 @@
+﻿@model Category
+
+<div class="row page-titles mx-0">
+    <div class="col-sm-6 p-md-0">
+        <div class="welcome-text">
+            <h4>Hi, welcome back!</h4>
+            <span class="ml-1">Element</span>
+        </div>
+    </div>
+    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Form</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Element</a></li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xl-12 col-xxl-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Vertical Form</h4>
+            </div>
+            <div class="card-body">
+                <div class="basic-form">
+                    <form method="post" enctype="multipart/form-data">
+                        <input type="hidden" value="@Model.CategoryId" name="categoryId" />
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" name="categoryName">Category Name</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" placeholder="Category Name" name="categoryName" value="@Model.CategoryName" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Parent</label>
+                            <div class="col-sm-8">
+                                <select class="form-control" name="parentId" id="sel1" disabled>
+                                    <option value="">-- Select Category Parent --</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Image</label>
+                            <div class="input-group mb-3 col-sm-8">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="f" value="@Model.ImageUrl">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="/categories/@Model.ImageUrl" width="100" />
+                        </div>
+                        <div>
+                            <p>Are you sure delete @Model.CategoryName</p>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $('input[name=f]').change(function () {
+            console.log(this);
+        });
+    </script>
+}

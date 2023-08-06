@@ -1,0 +1,38 @@
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+  
+
+    /* ============CSS================ */
+      .cats{
+        width: 100%;
+      }
+      .cats img{
+        width: 100%;
+        border-radius: 12px 0 0 12px;
+       
+      }
+      .bic{
+        border-radius: 12px;
+       
+      }
+      .btc{
+        width: 100%;
+        border: none;
+        background-color: #1313c9;
+        color: white;
+        padding: 7px 0px;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+      .cat{
+        margin-top: 30px;
+        padding: 10px 30px;
+      }
+      .custom-control-label{
+        color: gray;
+      }
+      .bic{
+        box-shadow: 10px 10px 10px 10px rgb(141, 141, 141) ;
+      }
+     /* ============CSS================ */

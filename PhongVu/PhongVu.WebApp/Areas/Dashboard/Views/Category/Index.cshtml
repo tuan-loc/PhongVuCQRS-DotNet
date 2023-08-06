@@ -1,0 +1,49 @@
+﻿@model List<Category>
+
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Category List</h4>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered verticle-middle table-responsive-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">Category Id</th>
+                            <th scope="col">Category Name</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Category Parent</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.CategoryId</td>
+                                <td>@item.CategoryName</td>
+                                <td>
+                                    <img src="/categories/@item.ImageUrl" width="100" />
+                                </td>
+                                <td>@item.ParentId</td>
+                                <td>
+                                    <span>
+                                        <a href="/dashboard/category/edit/@item.CategoryId" class="mr-4" data-toggle="tooltip"
+                                       data-placement="top" title="Edit">
+                                            <i class="fa fa-pencil color-muted"></i>
+                                        </a>
+                                        <a href="/dashboard/category/delete/@item.CategoryId" data-toggle="tooltip"
+                                       data-placement="top" title="Close">
+                                            <i class="fa fa-close color-danger"></i>
+                                        </a>
+                                    </span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

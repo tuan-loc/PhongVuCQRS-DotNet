@@ -1,0 +1,359 @@
+body {
+    font-family: "Roboto", sans-serif;
+  }
+  .header__contact--link {
+    margin-left: 15px;
+  }
+  .header__contact--link {
+    color: white;
+    font-size: 14px;
+  }
+  .header__logo--link img {
+    width: 35px;
+  }
+  .one {
+    width: 100%;
+    border: 1px solid rgb(209, 209, 209);
+    padding: 5px 9px;
+    border-radius: 5px;
+  }
+  .one span {
+    color: rgb(134, 134, 134);
+  }
+  .one svg {
+    color: rgb(134, 134, 134);
+  }
+  .header__search--form {
+    width: 100%;
+    position: relative;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: #f5f5f5;
+  }
+  
+  .search__input {
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    border: none;
+    outline: none;
+    padding: 6px 12px;
+    padding-right: 45px;
+    background-color: inherit;
+  }
+  .oio {
+    margin-left: 120px;
+  }
+  
+  .search__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1px;
+    padding: 4px 8px;
+    background-color: #0202a8;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+  
+  .search__button i {
+    font-weight: 500;
+    font-style: 20px;
+  
+    color: #fff;
+  }
+  
+  .header__funtion--link {
+    color: rgb(172, 172, 172);
+    padding: 3px 12px;
+  }
+  
+  .header__funtion--link.active {
+    font-weight: 600;
+  }
+  
+  .header__funtion--link.active i {
+    font-weight: 600;
+  }
+  
+  .header__funtion--link:hover {
+    text-decoration: none;
+    color: var(--blue);
+  }
+  
+  .header__funtion--link i {
+    /* font-weight: 500; */
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+  
+  .contact {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+   
+    background-color: #f8f8fc;
+  }
+  
+  /* ============CSS================ */
+ .tai-khoan img{
+     width: 40px;
+     border-radius: 3px;
+ }
+ .nho{
+     margin-bottom: 15px;
+ }
+ .nho ul li a{
+     text-decoration: none;
+     color: rgb(68, 68, 68);
+     font-size: 15px;
+     transition: all 0.2s;
+     
+     
+ }
+ .nho ul li{
+    margin-bottom: 10px;
+    
+}
+ .nho ul {
+    list-style: none;
+}
+.nho ul li a span{
+   margin-left: 10px;
+}
+
+.nho ul li:hover{
+    
+    font-size: 15px;
+    
+    font-weight: 600;
+    cursor: pointer;
+    color: #0000b9;
+   
+}
+.bus{
+    width: 850px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 3px;
+}
+.bus form label{
+    font-size: 14px;
+   
+}
+button{
+    padding: 6px 20px;
+    background-color:#0202a8 ;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.lol, .lol1, .lol2 .lol3{
+  position: fixed;
+}
+
+
+
+.has{
+    width: 850px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 3px;
+    padding-bottom: 50px;
+}
+.nav-tabs{
+    position: relative;
+}
+.ui{
+    width: 100%;
+    position: relative;
+}
+
+.bass{
+    width: 850px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+.chus{
+    margin-left: 100px;
+}
+.btn-success{
+    background-color:#0202a8;
+    border: none;
+}
+.btn-danger{
+    border: none;
+}
+.bass table span{
+    font-size: 15px;
+}
+.vien{
+    padding: 3px 5px;
+    border: solid 1px #0202a8 ;
+    border-radius: 4px;
+    color: #0202a8;
+    margin-left: 4px;
+    
+}
+table{
+    width: 100%;
+}
+
+.anh{
+    width: 850px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 25px 15px;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 5;
+   
+}
+
+.row{
+  margin-bottom: 15px;
+}
+
+.pus i{
+  padding: 3px 11px;
+  background-color: rgb(255, 255, 255);
+  font-size: 25px;
+  border-radius: 3px;
+}
+.pus .far{
+  color: #777777;
+}
+.pus i:hover{
+ 
+  background-color: #0202a8;
+  color: #ffffff;
+  cursor: pointer;
+
+}
+.pus span{
+  font-size: 19px;
+}
+.pas{
+  width: 100%;
+  height: 175px;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 4px;
+}
+.pas ul li{
+ list-style: none;
+ font-size: 0.905rem;
+}
+.bic{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 15px;
+}
+.tex{
+  font-weight: 600;
+    font-size: 17px;
+   
+}
+.viv{
+  width: 100%;
+  height: 95px;
+  padding: 18px 25px;
+  border: solid 1px rgb(221, 221, 221);
+  border-radius: 7px;
+}
+.viv p{
+  font-size: 14px;
+}
+.viv p span {
+  font-size: 8px;
+  padding: 5px 10px;
+  background-color: rgb(214, 15, 41);
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.sku{
+  width: 100%;
+}
+.so img{
+  width: 75px;
+  border: solid 1px gainsboro;
+  border-radius: 4px;
+}
+.so{
+  float: left;
+}
+.so ul li{
+  list-style: none;
+  font-size: 14px;
+}
+.si{
+  text-align: right;
+  padding-right: 4px;
+}
+.si ul li{
+  list-style: none;
+  font-size: 14px;
+}
+.gach{
+  text-decoration-line: line-through;
+}
+
+
+.nic{
+  width: 100%;
+  height: 165px;
+  background-color: rgb(255, 255, 255);
+  color: #777777;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 15px;
+}
+ .tt{
+ color: rgb(226, 1, 1);
+ font-size: 20px;
+ font-weight: 600;
+}
+.y{
+  color: #000000;
+}
+.pt{
+  width: 100%;
+  height: 115px;
+  background-color: rgb(255, 255, 255);
+ 
+  border-radius: 4px;
+  padding: 15px;
+  
+}
+.po{
+    font-weight: 600;
+    font-size: 17px;
+}
+.v{
+  font-size: 15px;
+}
+
+  /* ============CSS================ */
+  

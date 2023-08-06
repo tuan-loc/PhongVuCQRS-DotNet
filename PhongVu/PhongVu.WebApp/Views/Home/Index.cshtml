@@ -1,0 +1,84 @@
+﻿<section class="carousel ">
+    <div id="js-home-carousel" class="owl-carousel owl-theme">
+        @foreach (Banner item in ViewBag.Banners)
+        {
+            <div class="item">
+                <a href="" class="carousel__link">
+                    <img src="/banners/@item.ImageUrl" alt="" class="carousel__image">
+                </a>
+            </div>
+        }
+    </div>
+    <!-- End #home-carousel -->
+
+    <div class="nav-aside container d-flex justify-content-between align-items-start pt-3">
+        <ul class="nav flex-column align-items-center bg-white nav__category">
+            @foreach (Category item in ViewBag.Categories)
+            {
+                <li class="nav-item">
+                    <a class="nav-link active" href="/category/@item.CategoryId">
+                        <i class="fal fa-dryer-alt"></i> @item.CategoryName
+                    </a>
+                </li>
+            }
+        </ul>
+        <!-- End .menu -->
+
+        <aside class="banner banner__right ">
+            <div class="banner__item ">
+                <a href="" class="banner__link">
+                    <figure class="box__image">
+                        <img class="zoom banner__image" src="./images/banner/banner1.jpg" alt="">
+                    </figure>
+                </a>
+            </div>
+            <!-- end .banner__item -->
+            <div class="banner__item">
+                <a href=" " class="banner__link ">
+                    <figure class="box__image ">
+                        <img class="zoom banner__image " src="./images/banner/banner2.jpg" alt=" ">
+                    </figure>
+                </a>
+            </div>
+            <!-- end .banner__item -->
+        </aside>
+        <!-- end .banner__right -->
+    </div>
+    <!-- End .nav && .banner_right -->
+
+    <div class="container">
+        <div class="banner banner__bottom">
+            <div class="banner__item ">
+                <a href=" " class="banner__link ">
+                    <figure class="box__image ">
+                        <img class="zoom banner__image " src="./images/banner/banner3.jpg" alt=" ">
+                    </figure>
+                </a>
+            </div>
+            <div class="banner__item ">
+                <a href=" " class="banner__link ">
+                    <figure class="box__image ">
+                        <img class="zoom banner__image " src="./images/banner/banner4.jpg" alt=" ">
+                    </figure>
+                </a>
+            </div>
+            <div class="banner__item ">
+                <a href=" " class="banner__link ">
+                    <figure class="box__image ">
+                        <img class="zoom banner__image " src="./images/banner/banner5.jpg" alt=" ">
+                    </figure>
+                </a>
+            </div>
+            <div class="banner__item ">
+                <a href=" " class="banner__link ">
+                    <figure class="box__image ">
+                        <img class="zoom banner__image " src="./images/banner/banner6.jpg" alt=" ">
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end .banner__bottom -->
+</section>
+<!-- End .carousel -->

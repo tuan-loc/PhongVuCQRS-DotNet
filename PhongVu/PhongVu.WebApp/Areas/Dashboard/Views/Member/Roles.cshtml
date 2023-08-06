@@ -1,0 +1,28 @@
+﻿@model Member
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">@Model.Username</div>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Role</th>
+                    <th>Checked</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Role item in ViewBag.roles)
+                {
+                    <tr>
+                        <td>@item.RoleName</td>
+                        <td>
+                            <input type="checkbox" value="@item.RoleId" name="rid" />
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
