@@ -66,7 +66,7 @@
                                                       fill="#82869E"></path>
                                                 </svg>
                                             </button>
-                                            <input type="number" class="hy" value="@item.Quantity">
+                                            <input type="number" class="hy qty" value="@item.Quantity" id="@item.ProductId" min="1" max="10">
                                             <button class="det">
                                                 <svg fill="none" viewBox="0 0 24 24" size="16" class="css-1mzhsqx"
                                                  color="textPrimary" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
@@ -138,3 +138,16 @@
         </div>
     </div>
 </div>
+
+@section Scripts{
+    <script>
+        $('.qty').change(function(){
+            var pid = $(this).attr('id');
+            $.post('/cart/edit', {'quantity': $(this).val(), 'productId': pid}, (d) => {
+                if(d = 1){
+                    window.location.reload();
+                }
+            });
+        });
+    </script>
+}

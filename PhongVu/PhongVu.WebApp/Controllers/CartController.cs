@@ -67,5 +67,28 @@ namespace PhongVu.WebApp.Controllers
             HttpContext.Session.Remove("cart");
             return Redirect("/");
         }
+
+        [HttpPost]
+        public IActionResult Edit(Cart obj)
+        {
+            Dictionary<int, Cart>? dict = HttpContext.Session.Get<Dictionary<int, Cart>>("cart");
+            if(dict != null && dict.ContainsKey(obj.ProductId))
+            {
+                dict[obj.ProductId].Quantity = obj.Quantity;
+                HttpContext.Session.Set("cart", dict);
+                return Json(1);
+            }
+            return Json(0);
+        }
+
+        public IActionResult Checkout()
+        {
+            return View();
+        }
+
+        public IActionResult InfomationRecieve()
+        {
+            return View();
+        }
     }
 }
