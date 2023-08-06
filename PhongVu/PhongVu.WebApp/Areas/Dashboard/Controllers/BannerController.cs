@@ -28,7 +28,7 @@ namespace PhongVu.WebApp.Areas.Dashboard.Controllers
             if (f != null && !string.IsNullOrEmpty(f.FileName))
             {
                 string ext = Path.GetExtension(f.FileName);
-                string fileName = Helper.RandomString(32 - ext.Length) + ext;
+                string fileName = PhongVu.Infrastructure.Helper.RandomString(32 - ext.Length) + ext;
                 banner.ImageUrl = fileName;
                 string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "banners");
 
@@ -81,7 +81,7 @@ namespace PhongVu.WebApp.Areas.Dashboard.Controllers
             if(f != null && !string.IsNullOrEmpty(f.FileName))
             {
                 string ext = Path.GetExtension(f.FileName);
-                string fileName = Helper.RandomString(32 - ext.Length) + ext;
+                string fileName = PhongVu.Infrastructure.Helper.RandomString(32 - ext.Length) + ext;
                 string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "banners");
                 System.IO.File.Delete(Path.Combine(path, obj.ImageUrl));
                 using(Stream stream = new FileStream(Path.Combine(path, fileName), FileMode.Create))

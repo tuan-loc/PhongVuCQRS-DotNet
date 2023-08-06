@@ -24,7 +24,7 @@ namespace PhongVu.WebApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterDto obj)
         {
-            obj.MemberId = Helper.RandomString(32);
+            obj.MemberId = PhongVu.Infrastructure.Helper.RandomString(32);
             obj.RoleId = 1;
             int ret = await Mediator.Send(new RegisterCommandRequest(obj));
             if (ret > 0)

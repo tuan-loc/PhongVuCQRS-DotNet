@@ -34,7 +34,14 @@ namespace PhongVu.Persistence
 
         public Product GetById(int id)
         {
-            throw new NotImplementedException();
+            string sql = "SELECT * FROM Product WHERE ProductId = @Id";
+            return connection.QuerySingleOrDefault<Product>(sql, new { Id = id });
+        }
+
+        public IEnumerable<Product> GetProductsByCategory(short id)
+        {
+            string sql = "SELECT * FROM Product JOIN Category ON Product.CategoryId = Category.CategoryId WHERE Category.CategoryId = @Id";
+            return connection.Query<Product>(sql, new {Id = id});
         }
     }
 }

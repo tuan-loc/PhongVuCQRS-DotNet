@@ -7,7 +7,8 @@
 		public string? ImageUrl { get; set; }
 		public short? ParentId { get; set; }
 
-		public Category Parent { get; set; }
-		public List<Category> Children { get; set; }
+		public Category Parent { get; set; } = null!;
+		public List<Category> Children { get; set; } = null!;
+		public List<Product> Products { get; set; } = null!;
 	}
 }

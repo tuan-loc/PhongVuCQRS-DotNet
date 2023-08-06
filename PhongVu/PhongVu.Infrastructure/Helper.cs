@@ -1,5 +1,4 @@
 ﻿using System.Security.Cryptography;
-using System.Text;
 
 namespace PhongVu.Infrastructure
 {
@@ -20,7 +19,7 @@ namespace PhongVu.Infrastructure
         public static byte[] Hash(string plaintext)
         {
             HashAlgorithm algorithm = SHA512.Create();
-            return algorithm.ComputeHash(Encoding.ASCII.GetBytes(plaintext));
+            return algorithm.ComputeHash(System.Text.Encoding.ASCII.GetBytes(plaintext));
         }
     }
 }

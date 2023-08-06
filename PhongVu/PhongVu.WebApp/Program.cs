@@ -4,6 +4,7 @@ using PhongVu.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddSession();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(p =>
 {
     p.LoginPath = "/auth/login";
@@ -16,6 +17,7 @@ builder.Services.AddApplication();
 
 var app = builder.Build();
 
+app.UseSession();
 app.UseStaticFiles();
 app.MapDefaultControllerRoute();
 app.MapControllerRoute(name: "Dashboard", pattern: "{area:exists}/{controller=home}/{action=index}/{id?}");
